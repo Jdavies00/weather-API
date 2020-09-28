@@ -1,0 +1,34 @@
+To complete the assignment, you must complete the following:
+
+Allow the user to enter their location (zip code is probably easiest) and press a button to load the weather by creating an API GET request
+
+If the request is successful, display the following in a 'mobile app' format:
+
+    single card container 
+    <div col-4> ish
+
+
+
+            City name
+            Current weather conditions
+            Current temperature in Kelvin, Fahrenheit, and Celsius
+            A unique image, selected by the current temperature (The API has icons)
+
+If the request is unsuccessful, display a specific error message.
+
+Additional Requirements
+
+        Website must be responsive
+        Website must be styled
+        Use the tools and technologies covered in class to complete your website. 
+
+
+Stretch Goals
+
+    Get weather based on location data (no need for user input)
+    Use more data provided by the api (forecast data, historical data, daily change in weather, etc.)
+    Create a list of Personas that could be used in an MVP
+    Use JS to render the entire app (nothing except a <div id='main'></div> in the body of your index.html)
+
+
+shuld this behave like the mind reader?
