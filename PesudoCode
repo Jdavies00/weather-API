@@ -7,6 +7,9 @@ If the request is successful, display the following in a 'mobile app' format:
     single card container 
     <div col-4> ish
 
+    structure with ids to hav java grab it later
+    a search bar to input the zip code
+
 
 
             City name
@@ -32,3 +35,30 @@ Stretch Goals
 
 
 shuld this behave like the mind reader?
+
+
+#START()
+// declare variables
+    //zip, api key data
+
+//declare funtion
+// function init (populate  var with info when tha page loads)
+
+//setup clickhandleers or event handlers
+
+///renderPages - displays the Jason DAta in a useable  way
+
+//renderAlert - when the api  fails or the user enters in a bad  data
+
+// validateUserInput - mmakes sure the user enter in a valid input
+
+
+
+
+
+
+
+
+
+
+#END()
