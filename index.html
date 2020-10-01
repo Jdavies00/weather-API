@@ -12,75 +12,91 @@
     <link rel= "stylesheet" href= "css/style.css">
 </head>
 <body>
-      <div class="container">
-        <h4 class="text-center pt-4 pb-4 text-white">BI11-M3CH</h4>
-     </div>
-      <div class="container-fluid">
-          <div class="input-group mb-4">
-              <input id="userInput" type="text" class="form-control" placeholder="Enter Zip Code " aria-label="Recipient's username" aria-describedby="basic-addon2">
-              <div class="input-group-append">
-                  <button id ="zipBttn" class="btn btn-outline-secondary" type="button">Weather or Not</button>
+    <div class="container boarder">
+        <div class="container">
+            <h4 class="text-center pt-4 pb-4 text-white">BI11-M3CH</h4>
+            <h5 id=invalid></h5>
+        </div>
+        <div class="container-fluid">
+            <div class="input-group mb-4">
+                <input id="userInput" type="text" class="form-control" placeholder="Enter Zip Code " aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                    <button id ="zipBttn" class="btn btn-outline-secondary" type="button">Weather or Not</button>
                 </div>
             </div>
         </div> 
+    </div> 
         <!-- Id = weatherContainer    cityName -->
-        <div id="weatherContainer">
-            <div class="container pt-2">
-                <div class="row d-flex justify-content-center">
-                    <div class="col-12 text-center">
-                        <h3>City</h3>
-                        <div class="row d-flex justify-content-center border-top bg-white">
-                            <div class="col-8 text-center">
-                                <p id="cityName"></p>
+    <div id="magic" class="container">
+        <div class="container pt-2">
+            <div class="row d-flex justify-content-center">
+                <div class="col-12 text-center">
+                        <div id="weatherContainer">
+                            <h3>City</h3> 
+                            <div class="row d-flex justify-content-center border-top ">
+                                <div class="col-8 text-center">
+                                    <br><h4 id="cityName"></h4><br>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-<!-- id weather -->
-            <div class="container pt-3">
-                <div class="row d-flex ">
-                    <div class="col-12 text-center">
-                        <h3>Conditions</h3>
-                        <div class="row d-flex justify-content-center border-top bg-white">
-                            <div class="col-8 text-center">
-                                <p id="weather"></p>
-                                <br>
+         </div>
+    <!-- kelvin fahrenheit  celcius -->
+                <div class="container pt-3">
+                    <div class="row d-flex ">
+                        <div class="col-12 text-center">
+                            <h3>Temperature</h3>
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-8 text-center">
+                                    <table  class="table">
+                                        <thead>
+                                        <tr>
+                                            <th scope="col">Kelvin</th>
+                                            <th scope="col">Fahrenheit</th>
+                                            <th scope="col">Celcius</th>
+                                        </tr>
+                                        <tbody>
+                                            <tr>
+                                            <td id="kelvin" scope="row"></td>
+                                            <td id="fahrenheit"></td>
+                                            <td id="celcius"></td>
+                                            </tr>
+                                        </tbody>
+                                        </thead>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-<!-- id temp -->
-            <div class="container pt-3">
-                <div class="row d-flex ">
-                    <div class="col-12 text-center">
-                        <h3>Temperature</h3>
-                        <div class="row d-flex justify-content-center border-top bg-white">
-                            <div class="col-8 text-center">
-                                <p id="temp"></p>
-                                <br>
+    <!-- id condition -->
+                <div class="container pt-3">
+                    <div class="row d-flex ">
+                        <div class="col-12 text-center">
+                            <h3>Conditions</h3>
+                            <div class="row d-flex justify-content-center border-top">
+                                <div class="col-8 text-center">
+                                   <br> <h4 id="condition"></h4><br>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-<!-- id  -->
-            <div class="container pt-3">
-                <div class="row d-flex ">
-                    <div class="col-12 text-center">
-                        <h3>Kelvin</h3>
-                        <div class="row d-flex justify-content-center border-top bg-white">
-                            <div class="col-8 text-center">
-                                <p id="tempK"></p>
-                                <br>
+    <!-- id icon  -->
+                <div class="container pt-3">
+                    <div class="row d-flex ">
+                        <div class="col-12 text-center">
+                            <h3>Image</h3>
+                            <div class="row d-flex justify-content-center ">
+                                <div id="iconHTML" class="col-8 text-center">
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-
+    </div>
     <!-- Optional JavaScript -->
     <script src="/js/scratchpad.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

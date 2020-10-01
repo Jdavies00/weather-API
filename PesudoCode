@@ -62,3 +62,13 @@ shuld this behave like the mind reader?
 
 
 #END()
+
+
+
+Allow the user to enter their location (zip code is probably easiest) and press a button to load the weather by creating an API GET request
+If the request is successful, display the following in a 'mobile app' format:
+City name
+Current weather conditions
+Current temperature in Kelvin, Fahrenheit, and Celsius
+A unique image, selected by the current temperature (The API has icons)
+If the request is unsuccessful, display a specific error message
