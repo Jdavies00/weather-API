@@ -56,7 +56,7 @@ async function callWeatherAPI(){
                 // https://api.openweathermap.org/data/2.5/weather?id=${key}&zip=${zip}https://api.openweathermap.org/data/2.5/weather?id=${key}&zip=${zip}
             }).catch(function(err){
                 // alert("Fetch problem:" + err.message);
-                alert( zip + "is not a vaild zip code");
+                alert( zip + " is not a vaild zip code");
 
             });
             console.log(response);
